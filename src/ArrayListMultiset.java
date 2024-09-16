@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ArrayListMultiset {
+public class ArrayListMultiset extends MultiSet {
     private ArrayList<Integer> list;
 
     public ArrayListMultiset() {
@@ -30,7 +30,7 @@ public class ArrayListMultiset {
         return Collections.frequency(list, item);
     }
 
-    public int size() {
+    public Integer size() {
         return list.size();
     }
 }
